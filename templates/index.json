@@ -37,18 +37,17 @@
     },
     "featured_products": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "Featured products",
+        "title": "Derniers produits",
         "collection": "all",
-        "products_to_show": 4,
+        "products_to_show": 2,
         "show_view_all": true,
         "swipe_on_mobile": false,
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
+        "show_image_outline": false,
+        "show_vendor": true,
         "show_rating": false
       }
     },
