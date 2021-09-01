@@ -3,7 +3,9 @@
     "name": "theme_info",
     "theme_name": "SH Sport",
     "theme_version": "0.1.0",
-    "theme_author": "Raphaël Larrinaga"
+    "theme_author": "Raphaël Larrinaga",
+    "theme_documentation_url": "https://shopify.dev/themes/architecture",
+    "theme_support_url": "https://github.com/raphaellarrinaga/sh-sport"
   },
   {
     "name": "t:settings_schema.colors.name",
