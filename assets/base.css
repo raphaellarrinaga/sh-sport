@@ -1779,38 +1779,15 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 990px) {
   .header {
+    grid-template-areas: 'heading navigation icons';
+    grid-template-columns: auto 1fr auto;
+    column-gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
-  .header--has-menu:not(.header--middle-left) {
-    padding-bottom: 0;
-  }
-
-  .header--top-left {
-    grid-template-areas:
-      'heading icons'
-      'navigation navigation';
-    grid-template-columns: 1fr auto;
-  }
-
-  .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto 1fr auto;
-    column-gap: 2rem;
-  }
-
-  .header--top-center {
-    grid-template-areas:
-      'left-icon heading icons'
-      'navigation navigation navigation';
-  }
-
-  .header--middle-left .header__inline-menu {
+  .header .header__inline-menu {
     min-width: 45rem;
-  }
-
-  .header:not(.header--middle-left) .header__inline-menu {
     margin-top: 1.05rem;
   }
 }
@@ -1863,11 +1840,6 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     justify-self: start;
-  }
-
-  .header--top-center .header__heading-link,
-  .header--top-center .header__heading {
-    justify-self: center;
   }
 }
 
@@ -1941,22 +1913,12 @@ menu-drawer + .header__search {
   line-height: 0;
 }
 
-.header--top-center > .header__search {
-  display: none;
-}
-
-.header--top-center * > .header__search {
-  display: inline-flex;
-}
-
 @media screen and (min-width: 990px) {
-  .header:not(.header--top-center) * > .header__search,
-  .header--top-center > .header__search {
+  .header * > .header__search {
     display: inline-flex;
   }
 
-  .header:not(.header--top-center) > .header__search,
-  .header--top-center * > .header__search {
+  .header > .header__search {
     display: none;
   }
 }
@@ -2074,25 +2036,12 @@ details[open] > .header__icon--menu .icon-hamburger {
   display: none;
 }
 
-.header--top-center .header__inline-menu,
-.header--top-center .header__heading-link {
-  margin-left: 0;
-}
-
 @media screen and (min-width: 990px) {
   .header__inline-menu {
     display: block;
   }
 
-  .header--top-center .header__inline-menu {
-    justify-self: center;
-  }
-
-  .header--top-center .header__inline-menu > .list-menu--inline {
-    justify-content: center;
-  }
-
-  .header--middle-left .header__inline-menu {
+  .header .header__inline-menu {
     margin-left: 0;
   }
 }

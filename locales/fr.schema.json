@@ -215,40 +215,6 @@
     }
   },
   "sections": {
-    "announcement-bar": {
-      "name": "Barre d'annonces",
-      "blocks": {
-        "announcement": {
-          "name": "Annonce",
-          "settings": {
-            "text": {
-              "label": "Texte"
-            },
-            "color_scheme": {
-              "label": "Combinaison de couleurs",
-              "options__1": {
-                "label": "Arrière-plan 1"
-              },
-              "options__2": {
-                "label": "Arrière-plan 2"
-              },
-              "options__3": {
-                "label": "Inverser"
-              },
-              "options__4": {
-                "label": "Accentuation 1"
-              },
-              "options__5": {
-                "label": "Accentuation 2"
-              }
-            },
-            "link": {
-              "label": "Lien"
-            }
-          }
-        }
-      }
-    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -654,25 +620,6 @@
     "header": {
       "name": "En-tête",
       "settings": {
-        "logo": {
-          "label": "Image du logo"
-        },
-        "logo_width": {
-          "unit": "px",
-          "label": "Largeur personnalisée du logo"
-        },
-        "logo_position": {
-          "label": "Position du logo sur les grands écrans",
-          "options__1": {
-            "label": "Centré à gauche"
-          },
-          "options__2": {
-            "label": "En haut à gauche"
-          },
-          "options__3": {
-            "label": "En haut au centre"
-          }
-        },
         "menu": {
           "label": "Menu"
         },
